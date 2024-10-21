@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+      <script>
+         function cc(){
+            let price = document.getElementById('price').value;
+            let quantity = document.getElementById('quantity').value;
+            
+            price = parseFloat('price');
+            quantity = parseInt('quantity');
+
+            let total = price * quantity 
+
+        document.getElementById('totalvalue').innerText = total;
+
+
+         }
+      
+      </script>
+      <h3>Food Price Calculator</h3>
+      <form>
+      <label>Food Price</label>
+      <input type="text"  id="price" name="price" />
+        <br><br>
+      <label>Quantity</label>
+      <input type="text"  id="quantity" name="quantity" />
+
+      <br><br>
+
+      <input type="button" value="Calculate Cost" onclick="cc()"/>
+
+    </form>
+      
+
+    <h3>Total Cost : <span id="totalvalue">0.00</span>  </h3>
+    </body>
+</html>
